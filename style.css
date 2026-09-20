@@ -1,0 +1,291 @@
+@import
+url('https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600&family=Poppins:wght@500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+}
+
+body{
+    font-family:'Inter',sans-serif;
+    background:#eef2f7;
+    color:#222;
+    padding:30px 20px;
+    min-height:100vh;
+}
+
+.container{
+    max-width:850px;
+    margin:auto;
+}
+
+.header{
+    display:flex;
+    justify-content: space-between;
+    align-items:center;
+    margin-bottom:25px;
+}
+
+.header h1{
+    font-family:'Poppins',sans-serif;
+    color:#263a5f;
+    font-size:30px;
+    margin-bottom:5px;
+}
+
+.header p{
+    color:#687386;
+    font-size:14px;
+}
+
+.header button{
+    background:#263a5f;
+    color:white;
+    border:none;
+    padding:10px 15px;
+    border-radius:8px;
+    cursor:pointer;
+}
+
+.header button:hover{
+    background:#1c2d4d;
+}
+
+.progress-box{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:20px;
+    border-left:5px solid #4f7cff;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06)
+}
+
+.progress-box h2{
+    font-family:'Poppins',sans-serif;
+    color:#263a5f;
+    font-size:19px;
+    margin-bottom:7px;
+}
+
+.progress-box p{
+    color:#687386;
+    font-size:14px;
+    margin-bottom:12px;
+}
+
+.progress-bar{
+    width:100%;
+    height:8px;
+    background:#e5e9ef;
+    border-radius:10px;
+    overflow:hidden;
+}
+
+#progressFill{
+    width:0%;
+    height:100%;
+    background:#4f7cff;
+    border-radius:10px;
+    transition:0.3s;
+}
+
+.task-input{
+    background:white;
+    padding:20px;
+    border-radius:12px;
+    margin-bottom:25px;
+    box-shadow:0 3px 10px rgba(0,0,0,0.06);
+}
+
+.tsak-input h2,
+.task-area h2{
+    font-family:'Poppins',sans-serif;
+    color:#263a5f;
+    font-size:19px;
+    margin-bottom:15px;
+}
+
+.input-row{
+    display:flex;
+    gap:10px;
+    flex-wrap:wrap;
+}
+
+.input-row input{
+    flex:1;
+    min-width:150px;
+    padding:11px;
+    border:1px solid #ccd3df;
+    border-radius:7px;
+    outline:none;
+    font-family:'Inter',sans-serif;
+}
+
+.input-row input:focus{
+    border-color:#4f7cff;
+}
+
+.input-row button{
+    background:#4f7cff;
+    color:white;
+    border:none;
+    padding:11px 18px;
+    border-radius:7px;
+    cursor:pointer;
+    font-weight:600;
+}
+
+.input-row button:hover{
+    background: #3d68d8;
+}
+
+.task{
+    background: white;
+    padding: 17px;
+    border-radius: 10px;
+    margin-bottom: 12px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 15px;
+    border:1px solid #e0e5eb;
+    box-shadow: 0 2px 7px rgba(0,0,0,0.04);
+}
+
+.task-info h3{
+    font-family: 'Poppins',sans-serif;
+    color: #263a5f;
+    font-size: 16px;
+    margin-bottom:7px;
+}
+
+.task-info p{
+    color:#687386;
+    font-size: 13px;
+    margin-bottom:3px;
+}
+
+.completed{
+    text-decoration:line-through;
+    color:#888 !important;
+}
+
+.complete-btn{
+    background: #4f7cff;
+    color:white;
+    border:none;
+    padding:8px 11px;
+    border-radius:6px;
+    cursor:pointer;
+    margin-right:4px;
+}
+
+.delete-btn{
+    background:#e05252;
+    color:white;
+    border:none;
+    padding:8px 11px;
+    border-radius:6px;
+    cursor:pointer;
+}
+
+.complete-btn:hover,
+.delete-btn:hover{
+    opacity:0.85;
+}
+
+footer{
+    text-align:center;
+    margin-top: 40px;
+    padding:20px 10px;
+    border-top:1px solid #d5dae2;
+    color:#687386;
+    font-size:13px;
+    line-height:1.7;
+}
+
+footer p:first-child{
+    color:#263a5f;
+    font-weight: 600;
+}
+
+.dark{
+    background: #171c24;
+    color:white;
+}
+
+.dark .header h1{
+    color:white;
+}
+
+.dark .header p{
+    color:#aab3c2;
+}
+.dark .header button{
+    background:#303b4d;
+
+}
+
+.dark .progress-box,
+.dask .task-input,
+.dark .task{
+    background:#222a36;
+    border-color: #343e4d;
+}
+
+.dark .progress-box h2,
+.dark .task-input h2,
+.dark .tasks-area h2,
+.dark .task-info h3{
+    color:white;
+}
+
+.dark .progress-box p,
+.dark .task-info p{
+    color:#aab3c2;
+}
+
+.dark .progress-bar{
+    background:#343e4d;
+}
+
+.dark .input-row input{
+    background:#181e27;
+    color:white;
+    border-color:#3a4453;
+}
+
+.dark footer{
+    color:#aab3c2;
+    border-color:#344e4d;
+}
+
+.dark footer p:first-child{
+    color:white;
+}
+
+@media(max-width:600px){
+    body{
+        padding:20px 15px;
+    }
+    .header{
+        flex-direction:column;
+        gap:15px;
+        text-align:center;
+    }
+    .header h1{
+        font-size:25px;
+    }
+    .input-row{
+        flex-direction:column;
+    }
+    .input-row input,
+    .input-row button{
+        width:100%;
+    }
+    .task{
+        flex-direction: column;
+        align-items: flex-start;
+    }
+}

@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <title>Student Study Planner</title>
+
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+
+    <div class="container">
+
+        <div class="header">
+
+            <div>
+                <h1>📚 Student Study Planner</h1>
+
+                <p>
+                    Organize your studies and stay on track.
+                </p>
+            </div>
+
+            <button onclick="toggleDarkMode()">
+                🌙 Dark Mode
+            </button>
+
+        </div>
+
+
+        <div class="progress-box">
+
+            <h2>Today's Progress</h2>
+
+            <p>
+                Completed:
+                <span id="completedCount">0</span>
+                /
+                <span id="totalCount">0</span>
+            </p>
+
+            <div class="progress-bar">
+
+                <div id="progressFill"></div>
+
+            </div>
+
+        </div>
+
+
+        <div class="task-input">
+
+            <h2>Add New Task</h2>
+
+            <div class="input-row">
+
+                <input
+                    type="text"
+                    id="taskInput"
+                    placeholder="Enter your task"
+                >
+
+                <input
+                    type="text"
+                    id="subjectInput"
+                    placeholder="Subject"
+                >
+
+                <input
+                    type="date"
+                    id="dateInput"
+                >
+
+                <button onclick="addTask()">
+                    Add Task
+                </button>
+
+            </div>
+
+        </div>
+
+
+        <div class="tasks-area">
+
+            <h2>My Tasks</h2>
+
+            <div id="taskList"></div>
+
+        </div>
+
+
+        <footer>
+
+            <p>© DEVELOPED BY BM</p>
+
+            <p>
+                My first project, my first step into web development.
+            </p>
+
+        </footer>
+
+    </div>
+
+
+    <script src="script.js"></script>
+
+</body>
+
+</html>
